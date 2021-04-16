@@ -1,12 +1,43 @@
+@import './fonts.css';
+
 .galerie{
     height: 95vh;
     width: 100vw;
     position: absolute;
     z-index: 2;
     top: 10%;
+    right: -100%;
     background-color: black;
     display: flex;
     flex-direction: column;
+    transition: all ease-in-out 1s;
+}
+
+.galerie-show{
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: -95%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 1s;
+
+}
+
+.galerie-confirm{
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 3s;
 }
 
 .galerie-title{
@@ -14,4 +45,19 @@
     font-family: sans-serif;
     color: white;
     text-align: center;
+}
+
+.galerie-container{
+    display: flex;
+    height: 90%;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.title-container h3{
+    align-self: flex-end;
+    font-family: 'Pacifico', serif;
 }

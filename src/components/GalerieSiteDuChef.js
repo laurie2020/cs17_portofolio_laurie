@@ -9,13 +9,13 @@ export default function GalerieSiteDuChef(){
 
     return(
         <div className="galerie-chef">
-            <div className="image border">
+            <div className="image">
                 <img src={img1} alt=""/>
             </div>
-            <div className="image border">
+            <div className="image">
                 <img src={img2} alt=""/>
             </div>
-            <div className="image border">
+            <div className="image">
                 <img src={img3} alt=""/>
             </div>
             <div className="image">

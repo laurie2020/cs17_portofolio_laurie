@@ -2,21 +2,14 @@
     width: 50%;
     overflow: scroll;
 }
+.image{
+    overflow: scroll;
+    height: 50%;
+}
 
-.galerie-emporium img{
+.image img{
     width: 100%;
 }
-
-.image{
-    height: 50%;
-    overflow: scroll;
-}
-
 .image::-webkit-scrollbar {
     display: none;
-}
-  
-
-.border{
-    border-bottom: solid white 1px;
 }

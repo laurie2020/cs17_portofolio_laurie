@@ -31,6 +31,7 @@ export default function App(){
     let returnHome = () => {
         setAbout('about');
         setSkills('skills');
+        setGalerie('galerie')
         setColor('');
     }
 
@@ -50,6 +51,24 @@ export default function App(){
         setSkills('skills-confirm');
         setColor('black');
     }
+
+    // navigation vers la galerie
+    const [galerie, setGalerie] = useState('galerie');
+    
+    let enterGalerie = () => {
+        setGalerie('galerie-show');
+    }
+
+    let leaveGalerie = () => {
+        if(galerie === 'galerie-show'){
+            setGalerie('galerie');
+        }
+        
+    }
+    let confirmGalerie = () => {
+        setGalerie('galerie-confirm');
+        setColor('black');
+    }
     return(
         <div className={"app " + color}>
             <Header returnHome={returnHome} />
@@ -60,10 +79,13 @@ export default function App(){
             enterSkills={enterSkills}
             leaveSkills={leaveSkills}
             confirmSkills={confirmSkills}
+            enterGalerie={enterGalerie}
+            leaveGalerie={leaveGalerie}
+            confirmGalerie={confirmGalerie}
             />
             <About class={about} />
             <Skills class={skills}/>
-            <Galerie />
+            <Galerie class={galerie} />
         </div>
     );
 }

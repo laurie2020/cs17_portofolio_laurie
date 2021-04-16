@@ -34,7 +34,7 @@ export default function Navigation(props){
                     <div className="menu-circle"  onMouseEnter={handleArrow}>
                     </div>
                     <div className="arrow-container">
-                        <FontAwesomeIcon icon={faArrowRight} className={"arrow " + right} />
+                        <FontAwesomeIcon icon={faArrowRight} className={"arrow " + right} onMouseEnter={props.enterGalerie} onMouseLeave={props.leaveGalerie} onClick={props.confirmGalerie} />
                     </div>
                 </div>
             </div>
