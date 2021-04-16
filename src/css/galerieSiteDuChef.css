@@ -1,0 +1,23 @@
+.galerie-chef{
+    width: 50%;
+    border-right: solid white 1px;
+    overflow: scroll;
+}
+
+.galerie-chef img{
+    width: 100%;
+}
+
+.image{
+    height: 50%;
+    overflow: scroll;
+}
+
+.image::-webkit-scrollbar {
+    display: none;
+}
+  
+
+.border{
+    border-bottom: solid white 1px;
+}

@@ -3,7 +3,8 @@ import Header from './Header';
 import Navigation from './Navigation';
 import About from './About';
 import Skills from './Skills';
-import React, {useState} from 'react'
+import Galerie from './Galerie';
+import React, {useState} from 'react';
 
 export default function App(){
 
@@ -62,6 +63,7 @@ export default function App(){
             />
             <About class={about} />
             <Skills class={skills}/>
+            <Galerie />
         </div>
     );
 }
