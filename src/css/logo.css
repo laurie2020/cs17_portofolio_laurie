@@ -1,0 +1,105 @@
+@import './fonts.css';
+
+.logo{
+    background-color: white;
+    margin: 5px 15px;
+    position: relative;
+    border: white 1px solid;
+    display: flex;
+}
+
+.jauge{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo95{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 95%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo85{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo70{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo30{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo25{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo20{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    transition: height ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.level{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(143, 143, 143);
+}

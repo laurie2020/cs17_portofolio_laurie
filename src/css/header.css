@@ -1,0 +1,47 @@
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(143, 143, 143);
+}
+
+.folder-button {
+    background-color: rgba(255,255,255,0);
+    border: none;
+    color: rgb(143, 143, 143);
+    font-size: 3.5rem;
+}
+
+.dropdown{
+    text-align: center;
+    transform: translateX(-59px);
+    z-index: 5;
+}
+
+.dropdown:hover button {
+    color: rgba(255,102,120,1);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu{
+    font-size: 1.1rem;
+    padding: 0;
+    display: none;
+}
+
+.dropdown-content{
+    list-style: none;
+    text-align: center;
+}
+
+.dropdown-content:hover {
+    color:rgb(82, 82, 82);
+}
+
+.nav-item:hover{
+    color: rgba(255,102,120,1);
+}

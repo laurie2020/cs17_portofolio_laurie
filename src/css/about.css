@@ -1,0 +1,63 @@
+@import './fonts.css';
+
+.about{
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: -100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 1s;
+}
+
+.about-show{
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 4;
+    top: -85%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 1s;
+}
+
+.about-confirm{
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 4;
+    top: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 3s;
+}
+.about-text{
+    color: white;
+    font-family: 'VT323';
+    border: white 2px solid;
+    height: 55%;
+    width: 70%;
+    margin-top: 100px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-between;
+}

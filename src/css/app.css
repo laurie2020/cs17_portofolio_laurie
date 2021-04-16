@@ -1,0 +1,19 @@
+@import './fonts.css';
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(255,183,183,1) 91%, rgba(255,102,120,1) 100%, rgba(255,102,120,1) 100%);
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app{
+    position: relative;
+    transition: 3s;
+}
+.black{
+    background-color: black;
+    transition: 4s;
+}

@@ -1,0 +1,90 @@
+@import 'animate.css';
+.menu-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(255,183,183,1);
+    transition: 1s;
+    z-index: 1;
+}
+
+.menu-circle:hover{
+    background-color: rgba(255,102,120,1);
+}
+
+.nav-container{
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowLR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowU{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow{
+    color: rgb(143, 143, 143);
+    font-size: 4rem;
+}
+
+.arrow:hover{
+    color: rgb(82, 82, 82);
+}
+.arrow-container{
+    padding: 15px;
+    height: 75px;
+    text-align: center;
+}
+
+.arrowLR .arrow-container{
+    width: 75px;
+}
+
+.arrow-up{
+    transform: translateY(90px);
+    opacity: 0%;
+    transition: all ease-in-out 1s;
+}
+.arrow-up-show{
+    transform: translateY(0);
+    opacity: 100%;
+    transition: all ease-in-out 1s;
+}
+
+
+.arrow-left{
+    transform: translateX(85px);
+    opacity: 0%;
+    transition: all ease-in-out 1s;
+}
+.arrow-left-show{
+    transform: translateY(0);
+    opacity: 100%;
+    transition: all ease-in-out 1s;
+}
+
+
+.arrow-right{
+    transform: translateX(-85px);
+    opacity: 0%;
+    transition: all ease-in-out 1s;
+}
+.arrow-right-show{
+    transform: translateY(0);
+    opacity: 100%;
+    transition: all ease-in-out 1s;
+}
+
+.nav-parent{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
