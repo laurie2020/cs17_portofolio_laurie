@@ -1,0 +1,34 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: rgb(143, 143, 143);
+}
+
+.contact-container{
+    width: 65%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    border: 2px rgb(143, 143, 143) solid;
+    height: 30px;
+    border-radius: 7px;
+    color: rgb(143, 143, 143);
+    font-size: 1.1rem;
+}
+
+.form textarea{
+    border: 2px rgb(143, 143, 143) solid;
+    border-radius: 7px;
+    color: rgb(143, 143, 143);
+    font-size: 1.1rem;
+}
+
+.submit {
+    margin-top: 5px;
+}

@@ -32,7 +32,7 @@ export default function About(props){
                     <span>En formation</span>
                     <span>profession</span>
                 </div>
-                <div class="story">
+                <div className="story">
                     <div className="ligne">
                         <span>histoire</span>
                         <span>J'ai découvert le developpement web tout à fait par hazard il y presques deux ans.</span>

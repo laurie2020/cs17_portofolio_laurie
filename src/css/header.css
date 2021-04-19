@@ -31,6 +31,7 @@
     font-size: 1.1rem;
     padding: 0;
     display: none;
+    margin: 0;
 }
 
 .dropdown-content{
@@ -44,4 +45,14 @@
 
 .nav-item:hover{
     color: rgba(255,102,120,1);
+}
+
+a .nav-item{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+a {
+    color: rgb(143, 143, 143);
+    text-decoration: none;
 }

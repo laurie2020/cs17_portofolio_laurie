@@ -9,6 +9,11 @@ body{
     overflow: hidden;
 }
 
+@media screen and (max-width: 762px) {
+    body{
+        overflow: auto;
+    }
+}
 .app{
     position: relative;
     transition: 3s;

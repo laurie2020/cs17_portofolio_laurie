@@ -1,0 +1,9 @@
+.chef{
+    overflow-y: scroll;
+    height: 90vh;
+    overflow-x: hidden;
+}
+.chef img{
+    width: 100%;
+}
+

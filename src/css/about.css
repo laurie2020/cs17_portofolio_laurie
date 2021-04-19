@@ -1,42 +1,65 @@
 @import './fonts.css';
 
 .about{
-    height: 95vh;
+    height: 95%;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: -600%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 10s;
+    display: flex;
+}
+
+@media screen and (max-width: 762px){
+    .about{
+        top: 10%;
+        font-size: 0.9rem;
+        height: fit-content;
+    }
+    h2 .title{
+        margin: 0;
+    }
+}
+.about-bis{
+    height: 95%;
     width: 100vw;
     position: absolute;
     z-index: 2;
     top: -100%;
     background-color: black;
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 1s;
+    display: flex;
 }
 
 .about-show{
-    height: 90vh;
+    height: 95%;
     width: 100vw;
     position: absolute;
-    z-index: 4;
-    top: -85%;
+    z-index: 2;
+    top: -90%;
     background-color: black;
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 1s;
+    display: flex;
 }
 
 .about-confirm{
-    height: 90vh;
+    height: 95%;
     width: 100vw;
     position: absolute;
-    z-index: 4;
+    z-index: 2;
     top: 10%;
     background-color: black;
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 3s;
+    display: flex;
 }
 .about-text{
     color: white;

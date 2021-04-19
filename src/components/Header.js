@@ -2,6 +2,7 @@ import '../css/header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFolder, faFolderOpen} from '@fortawesome/fontawesome-free-solid';
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Header(props){
 
@@ -9,16 +10,23 @@ export default function Header(props){
     return(
         <header>
             <nav className="navigation">
-                <span className="nav-item" onClick={props.returnHome} >Iula-Elese Laurie</span>
+                <Link to="/">
+                    <span className="nav-item" onClick={props.returnHome} >Iula-Elese Laurie</span>
+                </Link>
                 <div className="dropdown" onMouseEnter={() => {setIcon(faFolderOpen)}} onMouseLeave={() => {setIcon(faFolder)}}>
                     <button className="folder-button"><FontAwesomeIcon icon={icon} /></button>
                     <ul className="dropdown-menu">
-                        <li className="dropdown-content">Skills</li>
-                        <li className="dropdown-content">Galerie</li>
-                        <li className="dropdown-content">About</li>
+                        <Link to="/site_du_chef">
+                           <li className="dropdown-content">Sit Du Chef</li>
+                        </Link>
+                        <Link to="/emporium">
+                            <li className="dropdown-content">Emporium</li>
+                        </Link>
                     </ul>
                 </div>
-                <span className="nav-item">Contact</span>
+                <Link to="/contact">
+                    <span className="nav-item" onClick={props.returnHome}>Contact</span>
+                </Link>
             </nav>
         </header>
     );

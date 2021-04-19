@@ -14,6 +14,7 @@ export default function Navigation(props){
         setUp('arrow-up-show');
         setLeft('arrow-left-show');
         setRight('arrow-right-show');
+        props.handleAbout('about-bis')
     }
 
     let handleArrowHide = () => {
@@ -31,7 +32,7 @@ export default function Navigation(props){
                     <div className="arrow-container">
                         <FontAwesomeIcon icon={faArrowLeft} className={"arrow " + left} onMouseEnter={props.enterSkills} onMouseLeave={props.leaveSkills} onClick={props.confirmSkills} />
                     </div>
-                    <div className="menu-circle"  onMouseEnter={handleArrow}>
+                    <div className="menu-circle"  onMouseEnter={handleArrow} onMouseLeave={() => {props.handleAbout('about')}}>
                     </div>
                     <div className="arrow-container">
                         <FontAwesomeIcon icon={faArrowRight} className={"arrow " + right} onMouseEnter={props.enterGalerie} onMouseLeave={props.leaveGalerie} onClick={props.confirmGalerie} />

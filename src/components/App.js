@@ -5,6 +5,10 @@ import About from './About';
 import Skills from './Skills';
 import Galerie from './Galerie';
 import React, {useState} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Contact from './Contact';
+import Chef from './Chef';
+import Emporium from './Emporium';
 
 export default function App(){
 
@@ -26,7 +30,6 @@ export default function App(){
         setColor('black');
     }
 
-    
     // navigation vers l'accueil
     let returnHome = () => {
         setAbout('about');
@@ -69,20 +72,31 @@ export default function App(){
         setGalerie('galerie-confirm');
         setColor('black');
     }
+
+    let handleAbout = (change) => {
+        setAbout(change);
+    }
     return(
-        <div className={"app " + color}>
-            <Header returnHome={returnHome} />
-            <Navigation 
-            enterAbout={enterAbout} 
-            leaveAbout={leaveAbout} 
-            confirmAbout={confirmAbout}
-            enterSkills={enterSkills}
-            leaveSkills={leaveSkills}
-            confirmSkills={confirmSkills}
-            enterGalerie={enterGalerie}
-            leaveGalerie={leaveGalerie}
-            confirmGalerie={confirmGalerie}
-            />
+        <div className={"app " + color}>               
+            <Router>
+                    <Header returnHome={returnHome} />
+                    <Route path="/" exact render={() => 
+                    <Navigation enterAbout={enterAbout}  
+                        leaveAbout={leaveAbout} 
+                        confirmAbout={confirmAbout} 
+                        enterSkills={enterSkills} 
+                        leaveSkills={leaveSkills} 
+                        confirmSkills={confirmSkills} 
+                        enterGalerie={enterGalerie} 
+                        leaveGalerie={leaveGalerie} 
+                        confirmGalerie={confirmGalerie}
+                        handleAbout={handleAbout}
+                    />} />
+                    <Route path="/contact" exact component={Contact} />
+                    <Route path="/site_du_chef" exact component={Chef} />
+                    <Route path="/emporium" exact component={Emporium} />
+                
+            </Router>
             <About class={about} />
             <Skills class={skills}/>
             <Galerie class={galerie} />
